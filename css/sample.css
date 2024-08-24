@@ -1,0 +1,97 @@
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh; /* ページ全体の高さを確保 */
+    /* background-image: url('img/img2.png'); アップロードされた画像を背景に設定 */
+    /* background-image: url('/mnt/data/img2.png'); */
+    background-image: url('../img/img2.png');
+    background-size: cover; /* 画像を画面いっぱいに広げる */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+header, .select-container, main, button {
+    position: relative;
+    z-index: 1; /* 必要なコンテンツを背景の上に表示 */
+    text-align: center;
+}
+
+.overlay {
+    background-color: rgba(255, 255, 255, 0.6); /* オーバーレイを透過させる */
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 3em;
+    color: #333; /* テキストの色を調整 */
+}
+
+
+.date{ 
+    position:relative; 
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    margin-top: 20px; 
+ } 
+
+main{
+    position:relative;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40px;
+    margin-top: 20px;   
+}
+h1{
+    position:relative;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40px;
+    text-align: center;
+    margin-top: 30px;
+}
+h2,h3,h4,h5{
+    position:relative;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    text-align: center;
+    color: orange;
+}
+
+button#memory {
+    padding: 10px 20px;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 45%;
+    background-color: pink;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+textarea{
+  /* margin: 10%; */
+  width: 75%;
+  height: 100px;
+  font-size:16px;
+  padding: 0.5em;
+  margin: 0.5em 0;
+  border: double 10px pink;
+  /* padding: 0; */
+}
+
+.event{
+        margin: 3%;
+        width: 95%;
+        height: 230px;
+        font-size:80%;
+        box-shadow: 3px 3px 3px 3px #555;
+        background-color: aqua;
+      }
